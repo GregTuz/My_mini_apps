@@ -32,10 +32,13 @@ def get_tickers():
 
 def get_data(tickers):
 	url_params = {
-		'date_from': '2024-09-01',
+		'': '2024-09-01',
 		'date_to': '2024-09-30',
-		# "symbols": ','.join(tickers),
-		"symbols": 'MSFT,AAPL,AMZN,BABA',
+		# ----------------------------------
+		"symbols": ','.join(tickers),
+		# Так как запросов мало советую заменить строку выше на закомменченую потому что так даннве в csv точно смапятся
+		# "symbols": 'MSFT,AAPL,AMZN,BABA',
+		# ----------------------------------
 		'limit': 10
 	}
 	response = s.get(data_url, params=url_params)
