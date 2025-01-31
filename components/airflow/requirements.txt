@@ -1,0 +1,6 @@
+apache_airflow==2.7.3
+pyspark==3.5.2
+requests
+pandas
+apache-airflow-providers-postgres
+apache-airflow-providers-apache-spark
