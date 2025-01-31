@@ -22,8 +22,8 @@
 ## Сбор данных
 Для сбора данных используется API, а именно два запроса:
 - [http://api.marketstack.com/v1/eod](http://api.marketstack.com/v1/tickers) для сбора названия тикеров.
-- [http://api.marketstack.com/v1/eod](http://api.marketstack.com/v1/eod) для сбора данных по компаниям с параметрами: symbols - Имя в списке тикеров из первого запроса, date_from - начало сентября, date_to - конец сентября, limit на 10 записей 
-- [http://api.marketstack.com/v1/eod](http://api.marketstack.com/v1/tickers) для сбора данных по тикерам.
+- [http://api.marketstack.com/v1/tickers](http://api.marketstack.com/v1/eod) для сбора данных по компаниям с параметрами: symbols - Имя в списке тикеров из первого запроса, date_from - начало сентября, date_to - конец сентября, limit на 10 записей 
+- [http://api.marketstack.com/v1/tickers](http://api.marketstack.com/v1/tickers) для сбора данных по тикерам.
 
 ## Аналитика данных
 Для проверки качества данных в таблице `stocks` рекомендуется:
